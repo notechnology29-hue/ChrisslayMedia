@@ -6,3 +6,5 @@ next-env.d.ts
 .vercel
 *.log
 *.tsbuildinfo
+.vercel
+.env*
