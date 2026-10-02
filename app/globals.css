@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  background: #fff;
+  color: #000;
+}
+
+body {
+  @apply font-sans antialiased;
+}
+
+h1, h2, h3 {
+  @apply font-serif;
+}
+
+@layer components {
+  .field {
+    @apply w-full border-0 border-b border-black bg-transparent px-0 py-3 text-base outline-none placeholder:text-black/40 focus:border-b-2;
+  }
+  .btn {
+    @apply border border-black bg-black px-8 py-3 text-xs uppercase tracking-[0.25em] text-white transition hover:bg-white hover:text-black disabled:opacity-50;
+  }
+  .label {
+    @apply mb-1 block text-xs uppercase tracking-[0.2em];
+  }
+}
